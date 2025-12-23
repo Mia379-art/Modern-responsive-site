@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/root.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/hero Section.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-container">
+        <!-- left -->
+        <div class="header-left">
+          <button class="btn darkmood"><i class="ri-moon-line"></i></button>
+          <div class="auth-buttons">
+            <button class="btn btn-auth">SIGN UP</button>
+            <button class="btn btn-auth">LOG IN</button>
+          </div>
+        </div>
+        <!-- Center -->
+        <nav>
+          <ul class="nav-links">
+            <li class="nav-items"><a href="#">Home</a></li>
+            <li class="nav-items"><a href="#">About us</a></li>
+            <li class="nav-items">
+            <span>Services <i class="ri-arrow-down-s-line"></i></span>
+          <div class="dropdown-box">
+              <ul class="dropdown-left">
+                <li class="dropdown-item " data-target="mega1">
+                  <a   href="#">Services 1</a>
+                </li>
+                <li class="dropdown-item" data-target="mega2">
+                  <a  href="#">Services 2</a>
+                </li>
+                <li class="dropdown-item" data-target="mega3">
+                  <a   href="#">Services 3</a>
+                </li>
+              </ul>
+              <div class="mega-right">
+                <div class="mega-content" id="mega1">
+                  <div class="mega-headers">
+                    <header>header1 <i class="ri-arrow-right-s-line"></i></header>
+                  </div>
+                  
+                  <ul class="mega-item">
+                    <li><a class="line" href="">abc</a></li>
+                    <li><a class="line" href="">abc</a></li>
+                    <li><a class="line" href="">abc</a></li>
+                    <li><a class="line" href="">abc</a></li> 
+                  </ul>   
+                   <div class="mega-headers">
+                    <header>header1 <i class="ri-arrow-right-s-line"></i></header>
+                  </div>
+                  
+                  <ul class="mega-item">
+                    <li><a class="line" href="">abc</a></li>
+                    <li><a class="line" href="">abc</a></li>
+                    <li><a class="line" href="">abc</a></li>
+                    <li><a class="line" href="">abc</a></li> 
+                  </ul>   
+                   
+                  
+                </div>
+                
+                
+                <div class="mega-content" id="mega2">
+                  <header>header2<i class="ri-arrow-right-s-line"></i></header>
+                  <ul class="mega-item">
+                    <li><a  class="line" href="">hgf</a></li>
+                    <li><a class="line" href="">hgf</a></li>
+                    <li><a class="line" href="">hfh</a></li>
+                  </ul>
+                </div>
+
+                 <div class="mega-content" id="mega3">
+                  <header>header3<i class="ri-arrow-right-s-line"></i></header>
+                  <ul class="mega-item">
+                    <li><a class="line" href="">abi</a></li>
+                    <li><a class="line" href="">abi</a></li>
+                    <li><a class="line" href="">abi</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-items"><a href="#">Forms</a></li>  
+        </nav>
+        <!-- Right -->
+        <div class="header-right">
+          <div class="search-box" id="search-box">
+            <i class="ri-search-line"></i>
+            <input type="text" placeholder="Search" />
+          </div>
+
+          <div class="header-logo">
+            <img
+              src="./assets/images/toppng.com-design-for-logo-356x330.png"
+              alt="logo"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- --Hero Section-- -->
+     <section class="hero">
+      <canvas id="background-canvas"></canvas>
+      <!-- glass box -->
+       <div class="glass-container">
+        <div class="glass-card">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae debitis tempora dicta, praesentium illo obcaecati quis odit sequi at voluptate accusantium <br>
+             nemo libero vel hic minima aut quas fuga animi?</p>
+         <canvas class="glass-canvas"></canvas>
+        </div>
+       </div>
+     </section>
+     <!-- Swiper section -->
+  <section class="slider-section">
+  <div class="swiper mySwiper swiper1">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">    
+        <article class="product-card">
+          <div class="product-img">
+            <img src="./css/photo_2025-12-12_11-05-07.jpg" alt="product-card">
+          </div>
+          <div class="product-content">
+            <h3 class="product-title"> product's name</h3>
+            <p class="product-description">
+              Short product description 
+            </p>
+          </div>
+            <button class="product-button" type="button">
+             Details
+            </button>
+        </article> 
+      </div>
+      <div class="swiper-slide">Slide 2</div>     
+      <div class="swiper-slide">Slide 3</div>
+      <div class="swiper-slide">Slide 4</div>
+      <div class="swiper-slide">Slide 5</div>
+      <div class="swiper-slide">Slide 6</div>
+      <div class="swiper-slide">Slide 7</div>
+    </div>
+    
+  </div> 
+  </section>
+  <section class="slider-section ">
+  <div class="swiper mySwiper swiper2">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">    
+        <article class="product-card">
+          <div class="product-img">
+            <img src="./css/photo_2025-12-12_11-05-07.jpg" alt="product-card">
+          </div>
+          <div class="product-content">
+            <h3 class="product-title"> product's name</h3>
+            <p class="product-description">
+              Short product description 
+            </p>
+          </div>
+            <button class="product-button" type="button">
+             Details
+            </button>
+        </article> 
+      </div>
+      <div class="swiper-slide">Slide 2</div>     
+      <div class="swiper-slide">Slide 3</div>
+      <div class="swiper-slide">Slide 4</div>
+      <div class="swiper-slide">Slide 5</div>
+      <div class="swiper-slide">Slide 6</div>
+      <div class="swiper-slide">Slide 7</div>
+    </div>
+    
+  </div> 
+  </section>
+
+
+
+  
+  
+
+
+    <script src="js/header.js"></script>
+    <script src="./js/hero-section.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
+    <script src="./js/package.json"></script>
+    <script src="./js/sandbox.config.json"></script>
+  </body>
+</html>
