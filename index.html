@@ -10,7 +10,12 @@
     <link rel="stylesheet" href="css/swiper.css">
     <link rel="stylesheet" href="./css/grid-section.css">
     <link rel="stylesheet" href="./css/fixed-button.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
       rel="stylesheet"
@@ -20,33 +25,28 @@
   </head>
   <body>
     <!--------------- header ----------------------->
-    <header class="site-header">
+    <header  id="1"  class="site-header">
       <div class="header-container">
         <!-- left -->
-<div class="header-left">
-  
-  <div class="auth-buttons">
-    <button class="btn btn-auth">SIGN UP</button>
-    <button class="btn btn-auth">LOG IN</button>
-  </div>
-   <button class="darkmood">
-      <i class="ri-moon-line"></i>
-    </button>
+        <div class="header-left">
 
-  <div class="search-group">
-   
+          <div class="auth-buttons">
+            <button class="btn btn-auth">SIGN UP</button>
+            <button class="btn btn-auth">LOG IN</button>
+          </div>
+          <button class="darkmood">
+            <i class="ri-moon-line"></i>
+          </button>
 
-    <div class="search-wrapper">
-      <div class="search-box" id="search-box">
-        <i class="ri-search-line"></i>
-        <input type="text" placeholder="Search" />
-      </div>
-    </div>
-  </div>
-
-  
-
-</div>
+          <div class="search-group">
+            <div class="search-wrapper">
+              <div class="search-box" id="search-box">
+                <i class="ri-search-line"></i>
+                <input type="text" placeholder="Search" />
+              </div>
+            </div>
+          </div>
+        </div>
 
         <!-- Center -->
         <nav>
@@ -79,7 +79,7 @@
                     <li><a class="line" href="">abc</a></li>
                     <li><a class="line" href="">abc</a></li> 
                   </ul>   
-                   <div class="mega-headers">
+                    <div class="mega-headers">
                     <header>header1 <i class="ri-arrow-right-s-line"></i></header>
                   </div>
                   
@@ -89,7 +89,7 @@
                     <li><a class="line" href="">abc</a></li>
                     <li><a class="line" href="">abc</a></li> 
                   </ul>   
-                   
+                    
                   
                 </div>
                 
@@ -103,7 +103,7 @@
                   </ul>
                 </div>
 
-                 <div class="mega-content" id="mega3">
+                  <div class="mega-content" id="mega3">
                   <header>header3<i class="ri-arrow-right-s-line"></i></header>
                   <ul class="mega-item">
                     <li><a class="line" href="">abi</a></li>
@@ -116,6 +116,7 @@
           </li>
           <li class="nav-items"><a href="#">Forms</a></li>  
         </nav>
+
         <!-- Right -->
         <div class="header-right">
           
@@ -129,26 +130,28 @@
         </div>
       </div>
     </header>
+
     <!-- --Hero Section-- -->
-     <section class="hero">
+    <section id="2"  class="hero">
       <canvas id="background-canvas"></canvas>
       <!-- glass box -->
-       <div class="glass-container">
+      <div class="glass-container">
         <div class="glass-card">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae debitis tempora dicta, praesentium illo obcaecati quis odit sequi at voluptate accusantium <br>
              nemo libero vel hic minima aut quas fuga animi?</p>
          <canvas class="glass-canvas"></canvas>
         </div>
-       </div>
-     </section>
-     <!-- Swiper section -->
-  <section class="slider-section">
-  <div class="swiper mySwiper swiper1">
-    <div class="swiper-wrapper">
+      </div>
+    </section>
+    
+    <!-- Swiper section -->
+    <section id="3" class="slider-section">
+    <div class="swiper mySwiper swiper1">
+     <div class="swiper-wrapper">
       <div class="swiper-slide">    
         <article class="product-card">
           <div class="product-img">
-            <img src="" alt="product-card">
+           <img src="" alt="product-card">
           </div>
           <div class="product-content">
             <h3 class="product-title"> product's name</h3>
@@ -238,7 +241,7 @@
             <button class="product-button" type="button">
              Details
             </button>
-        </article>
+      </article>
       </div>
       <div class="swiper-slide">
         <article class="product-card">
@@ -258,186 +261,269 @@
       </div>
     </div>
     
-  </div> 
-  </section>
-  <section class="slider-section ">
-  <div class="swiper mySwiper swiper2">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">    
-        <article class="product-card">
-          <div class="product-img">
-            <img src="" alt="product-card">
+    </div> 
+    </section>
+
+    <!-- Swiper section-2 -->
+    <section    class="slider-section ">
+      <div class="swiper mySwiper swiper2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">    
+            <article class="product-card">
+              <div class="product-img">
+                <img src="" alt="product-card">
+              </div>
+              <div class="product-content">
+                <h3 class="product-title"> product's name</h3>
+                <p class="product-description">
+                  Short product description 
+                </p>
+              </div>
+              <button class="product-button" type="button">
+                Details
+              </button>
+            </article> 
           </div>
-          <div class="product-content">
-            <h3 class="product-title"> product's name</h3>
-            <p class="product-description">
-              Short product description 
-            </p>
+          <div class="swiper-slide">
+            <article class="product-card">
+              <div class="product-img">
+                <img src="" alt="product-card">
+              </div>
+              <div class="product-content">
+                <h3 class="product-title"> product's name</h3>
+                <p class="product-description">
+                  Short product description 
+                </p>
+              </div>
+                <button class="product-button" type="button">
+                Details
+                </button>
+            </article>
+          </div>     
+          <div class="swiper-slide">
+            <article class="product-card">
+              <div class="product-img">
+                <img src="" alt="product-card">
+              </div>
+              <div class="product-content">
+                <h3 class="product-title"> product's name</h3>
+                <p class="product-description">
+                  Short product description 
+                </p>
+              </div>
+              <button class="product-button" type="button">
+              Details
+              </button>
+            </article>
           </div>
-            <button class="product-button" type="button">
-             Details
-            </button>
-        </article> 
+          <div class="swiper-slide">
+            <article class="product-card">
+              <div class="product-img">
+                <img src="" alt="product-card">
+              </div>
+              <div class="product-content">
+                <h3 class="product-title"> product's name</h3>
+                <p class="product-description">
+                  Short product description 
+                </p>
+              </div>
+              <button class="product-button" type="button">
+              Details
+              </button>
+            </article>
+          </div>
+          <div class="swiper-slide">
+            <article class="product-card">
+              <div class="product-img">
+                <img src="" alt="product-card">
+              </div>
+              <div class="product-content">
+                <h3 class="product-title"> product's name</h3>
+                <p class="product-description">
+                  Short product description 
+                </p>
+              </div>
+              <button class="product-button" type="button">
+              Details
+              </button>
+            </article>
+          </div>
+          <div class="swiper-slide">
+            <article class="product-card">
+              <div class="product-img">
+                <img src="" alt="product-card">
+              </div>
+              <div class="product-content">
+                <h3 class="product-title"> product's name</h3>
+                <p class="product-description">
+                  Short product description 
+                </p>
+              </div>
+              <button class="product-button" type="button">
+              Details
+              </button>
+            </article>
+          </div>
+          <div class="swiper-slide">
+            <article class="product-card">
+              <div class="product-img">
+                <img src="" alt="product-card">
+              </div>
+              <div class="product-content">
+                <h3 class="product-title"> product's name</h3>
+                <p class="product-description">
+                  Short product description 
+                </p>
+              </div>
+              <button class="product-button" type="button">
+              Details
+              </button>
+            </article>
+          </div>
+        </div>
+      </div> 
+    </section>
+
+    <!-- grid-section -->
+    <section id="4" class="grid-wrapper">
+      <div class="grid-section">
+        <div class="container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+        <div class="item7">7</div>
+        <div class="item8">8</div>
+        </div>
       </div>
-      <div class="swiper-slide">
-        <article class="product-card">
-          <div class="product-img">
-            <img src="" alt="product-card">
-          </div>
-          <div class="product-content">
-            <h3 class="product-title"> product's name</h3>
-            <p class="product-description">
-              Short product description 
-            </p>
-          </div>
-            <button class="product-button" type="button">
-             Details
-            </button>
-        </article>
-      </div>     
-      <div class="swiper-slide">
-        <article class="product-card">
-          <div class="product-img">
-            <img src="" alt="product-card">
-          </div>
-          <div class="product-content">
-            <h3 class="product-title"> product's name</h3>
-            <p class="product-description">
-              Short product description 
-            </p>
-          </div>
-            <button class="product-button" type="button">
-             Details
-            </button>
-        </article>
+      <div class="text-grid-section">
+        <div class="textbox">
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit amet perspiciatis assumenda reprehenderit ratione eius similique accusamus quam, nam laudantium asperiores eligendi possimus nisi reiciendis ut architect</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit amet perspiciatis assumenda reprehenderit ratione eius similique accusamus quam, nam laudantium asperiores eligendi possimus nisi reiciendis ut architect</p>    
+        </div>
       </div>
-      <div class="swiper-slide">
-        <article class="product-card">
-          <div class="product-img">
-            <img src="" alt="product-card">
-          </div>
-          <div class="product-content">
-            <h3 class="product-title"> product's name</h3>
-            <p class="product-description">
-              Short product description 
-            </p>
-          </div>
-            <button class="product-button" type="button">
-             Details
-            </button>
-        </article>
-      </div>
-      <div class="swiper-slide">
-        <article class="product-card">
-          <div class="product-img">
-            <img src="" alt="product-card">
-          </div>
-          <div class="product-content">
-            <h3 class="product-title"> product's name</h3>
-            <p class="product-description">
-              Short product description 
-            </p>
-          </div>
-            <button class="product-button" type="button">
-             Details
-            </button>
-        </article>
-      </div>
-      <div class="swiper-slide">
-        <article class="product-card">
-          <div class="product-img">
-            <img src="" alt="product-card">
-          </div>
-          <div class="product-content">
-            <h3 class="product-title"> product's name</h3>
-            <p class="product-description">
-              Short product description 
-            </p>
-          </div>
-            <button class="product-button" type="button">
-             Details
-            </button>
-        </article>
-      </div>
-      <div class="swiper-slide">
-        <article class="product-card">
-          <div class="product-img">
-            <img src="" alt="product-card">
-          </div>
-          <div class="product-content">
-            <h3 class="product-title"> product's name</h3>
-            <p class="product-description">
-              Short product description 
-            </p>
-          </div>
-            <button class="product-button" type="button">
-             Details
-            </button>
-        </article>
-      </div>
-    </div>
+    </section>
     
-  </div> 
-  </section>
-  <!-- grid-section -->
-   <div class="grid-wrapper">
-    <div class="grid-section">
-      <div class="container">
-      <div class="item1">1</div>
-      <div class="item2">2</div>
-      <div class="item3">3</div>
-      <div class="item4">4</div>
-      <div class="item5">5</div>
-      <div class="item6">6</div>
-      <div class="item7">7</div>
-      <div class="item8">8</div>
-      </div>
-    </div>
-    <div class="text-grid-section">
-      <div class="textbox">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit amet perspiciatis assumenda reprehenderit ratione eius similique accusamus quam, nam laudantium asperiores eligendi possimus nisi reiciendis ut architect</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit amet perspiciatis assumenda reprehenderit ratione eius similique accusamus quam, nam laudantium asperiores eligendi possimus nisi reiciendis ut architect</p>    
-      </div>
-    </div>
-  </div>
-  <!-- fixed button -->
-   <div class="fixed-buttons">
-    <button class="fab-btn small-btn scroll-top"> 
-      <i class="ri-arrow-up-long-line"></i>
-    </button>
-    <!-- Scroll Progress -->
-   <button class="fab-btn scroll-progress">
-  <svg width="55" height="55">
-    <!-- دایره پس‌زمینه -->
-    <circle
-      cx="27.5"   
-      cy="27.5"
-      r="24"
-      class="progress-bg"
-    />
-    <!-- دایره نقطه‌ای متحرک -->
-    <circle
-      cx="27.5"
-      cy="27.5"
-      r="24"
-      class="progress-dot"
-    />
-  </svg>
-  <span id="scrollPercent">0%</span>
-</button>
+    <!-- fixed button -->
+    <section class="fixed-buttons">
+      <button class="fab-btn small-btn scroll-top"> 
+        <i class="ri-arrow-up-long-line"></i>
+      </button>
+      <!-- Scroll Progress -->
+      <button class="fab-btn scroll-progress">
+        <svg width="55" height="55">
+          <!-- دایره پس‌زمینه -->
+          <circle
+            cx="27.5"   
+            cy="27.5"
+            r="24"
+            class="progress-bg"
+          />
+          <!-- دایره نقطه‌ای متحرک -->
+          <circle
+            cx="27.5"
+            cy="27.5"
+            r="24"
+            class="progress-dot"
+          />
+        </svg>
+        <span id="scrollPercent">0%</span>
+      </button>
 
-    <!-- Back Button (Remix Icon) -->
-  <button class="fab-btn small-btn back-btn" >
-    <i class="ri-arrow-down-line"></i>
-  </button>
-   </div>
+      <!-- Back Button (Remix Icon) -->
+      <button class="fab-btn small-btn back-btn" >
+        <i class="ri-arrow-down-line"></i>
+      </button>
+    </section>
 
-  <script src="js/header.js"></script>
+    <!---- footer -->
+    <footer id="5" class="site-footer">
+      <!--overlay-top -->
+      <section class="footer-overlay footer-overlay-top">
+      <!-- Map -->  
+      <div class="footer-location">
+        <a
+          href="https://www.google.com/maps?q=Valiasr+Tehran"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="map-link"
+        >
+          <iframe
+            src="https://www.google.com/maps?q=Valiasr%20Tehran&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </a>
+
+        <h5 class="footer-address">
+          <a
+            href="https://www.google.com/maps?q=Valiasr+Tehran"
+            target="_blank"
+            rel="noopener noreferrer">
+            <h4> <i class="ri-map-pin-line"></i>Adress</h4>
+            <ul class="footer__links details">
+            <li><a href="#">Valiasr St, Tehran, Iran</a></li>
+          </ul>         
+          </a>
+        </h5>
+      </div>
+
+      <!-- Company -->
+      <div class="footer__col">
+        <h4>Company</h4>
+          <ul class="footer__links">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+      </div>
+            <div class="footer__col">
+        <h4>Company</h4>
+          <ul class="footer__links">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+      </div>
+      <!-- Legal -->
+        <div class="footer__col">
+          <h4>Legal</h4>
+          <ul class="footer__links">
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+    <!-- Logo -->
+      <div class="footer-logo">
+      <img src="./assets/images/purple-flame-logo-2-th.png" alt="">
+      </div>
+      </section>
+
+      <!--center-box -->
+      <section class="footer-center-box"></section>
+
+      <!-- overlay-bottom -->
+      <section class="footer-overlay footer-overlay-bottom">
+        <p>© All rights reserved</p>
+      </section>
+    </footer>
+
+
+
+
+
+    <script src="js/header.js"></script>
     <script src="./js/hero-section.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="./js/swiper.js"></script>
     <script src="./js/package.json"></script>
     <script src="./js/sandbox.config.json"></script>
     <script src="./js/fixed-button.js"></script>
+    <script src="./js/footer.js"></script>
+
   </body>
 </html>

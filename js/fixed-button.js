@@ -1,17 +1,13 @@
-// Elements
 const scrollTopBtn = document.querySelector(".scroll-top");
 const backBtn = document.querySelector(".back-btn");
 const scrollPercentText = document.getElementById("scrollPercent");
 const progressCircle = document.querySelector(".progress-dot");
 
-// Circle config
 const radius = 24;
-
-
 
 const circumference = 2 * Math.PI * radius;
 
-// ⭐ تعداد کل دایره‌ها
+//  تعداد کل دایره‌ها
 const TOTAL_DOTS = 16;
 
 // اندازه هر دایره و فاصله
@@ -51,4 +47,40 @@ scrollTopBtn.addEventListener("click", () => {
 // Back
 backBtn.addEventListener("click", () => {
   history.back();
+});
+const sections = Array.from(document.querySelectorAll("section[id]"));
+
+//scroll
+
+function getCurrentSectionIndex() {
+  const scrollPosition = window.scrollY + window.innerHeight / 2; //وسطِ صفحه‌ی چشم من الان کجای سایته؟»
+
+  return sections.findIndex((section) => {
+    //توی لیست سکشن‌ها بگرد ببین کدومش الان دور و بر منه
+    const top = section.offsetTop; //سکشن از کجا شروع می‌شه
+    const bottom = top + section.offsetHeight; //سکشن از کجا تموم می‌شه
+    return scrollPosition >= top && scrollPosition < bottom;
+  });
+}
+
+// فلش بالا → سکشن قبلی
+scrollTopBtn.addEventListener("click", () => {
+  const currentIndex = getCurrentSectionIndex();
+
+  if (currentIndex > 0) {
+    sections[currentIndex - 1].scrollIntoView({ 
+      behavior: "smooth",
+    });
+  }
+});
+
+// فلش پایین → سکشن بعدی
+backBtn.addEventListener("click", () => {
+  const currentIndex = getCurrentSectionIndex();
+
+  if (currentIndex < sections.length - 1) {
+    sections[currentIndex + 1].scrollIntoView({
+      behavior: "smooth",
+    });
+  }
 });
